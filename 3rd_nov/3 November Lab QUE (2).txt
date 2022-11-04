@@ -24,20 +24,20 @@ public class demo1 {
 		{
 			System.out.print(" ");	        //prints space
 		}
-		for(j=1;j<=i;j++)
+		for(j=1;j<=i;j++)                       //inner loop for columns
 		{
 			
-				if(j%2==0)
+				if(j%2==0)             ///for checking it is eqal to zero or not
 				{
 					System.out.print("0");   //prints 0
 				}
-				else
+				else                    
 				{
 					System.out.print("1");   //prints 1
 				}
 			
 		}
-		//throws the cursor in a new line after printing each line  
+		                                     //throws the cursor in a new line after printing each line  
 		System.out.println();
 	}
   }

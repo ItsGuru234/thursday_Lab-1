@@ -14,26 +14,30 @@ public class demo1 {
 	}
 	public static void Print_no()
 	{
+	                          //i for rows and j for columns      
+        
 	int i,j;
-	for(i=1;i<=5;i++)
+	for(i=1;i<=5;i++)                               //outer loop for rows  
 	{
-		for(j=4;j>=i;j--)
+		for(j=4;j>=i;j--)                       //inner loop for columns  work for space  
+		 
 		{
-			System.out.print(" ");	
+			System.out.print(" ");	        //prints space
 		}
 		for(j=1;j<=i;j++)
 		{
 			
 				if(j%2==0)
 				{
-					System.out.print("0");
+					System.out.print("0");   //prints 0
 				}
 				else
 				{
-					System.out.print("1");
+					System.out.print("1");   //prints 1
 				}
 			
 		}
+		//throws the cursor in a new line after printing each line  
 		System.out.println();
 	}
   }
@@ -56,18 +60,20 @@ public class Demo2 {
 		Print_star();
 	}
 	public static void Print_star()
-	{
+	{    
+	                   //i for rows and j for columns      
 		int i,j;
-		for(i=1;i<=5;i++)
+		for(i=1;i<=5;i++)                           //Outer loop work for rows  
 		{
-			for(j=4;j>=i;j--)
+			for(j=4;j>=i;j--)                    //inner loop work for space    
 			{
-				System.out.print(" ");	
+				System.out.print(" ");	     //prints space
 			}
-			for(j=1;j<2*i;j++)
+			for(j=1;j<2*i;j++)                  //inner loop for columns  
 			{
-				System.out.print("*");
+				System.out.print("*");      //prints star
 			}
+			                                    //throws the cursor in a new line after printing each line  
 			System.out.println( );
 	    }	
 	}}

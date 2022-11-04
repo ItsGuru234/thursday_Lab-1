@@ -10,14 +10,18 @@ Q3)Write a program to display the following pattern
 class Downward_star {
     public static void main(String[] args) {
        
-for(int i=5;i>=1;i--){
-    for(int j=5;j>i;j--){
+for(int i=5;i>=1;i--) //Outer loop work for rows
+{
+    for(int j=5;j>i;j--) //inner loop work for space   
+    {
         System.out.print(" ");
     }
-    for(int j=1;j<=(2*i-1);j++){
+    for(int j=1;j<=(2*i-1);j++)//inner loop for columns  
+    {
         System.out.print("*");
         
     }
+    //throws the cursor in a new line after printing each line 
     System.out.println();
 }
     }
@@ -32,14 +36,19 @@ for(int i=5;i>=1;i--){
 -------------
 public class Main {
     public static void main(String[] args) {
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 4; j++) {
-                if (i == 0 || i == 3 || j == 0 || j == 3) {
+    
+        for (int i = 0; i < 4; i++) //Outer loop work for rows
+        {
+            for (int j = 0; j < 4; j++) ;//inner loop for columns 
+            {
+                if (i == 0 || i == 3 || j == 0 || j == 3)// condition for star and space
+                 {
                     System.out.print("*");
                 } else {
                     System.out.print(" ");
                 }
             }
+            //throws the cursor in a new line after printing each line 
             System.out.println();
         }
     }
